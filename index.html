@@ -657,22 +657,6 @@ ul{margin:8px 0 14px;padding-left:20px;}li{margin-bottom:6px;}
 .contact-item:hover .contact-icon{transform:scale(1.15) rotate(-8deg);}
 .contact-label{font-size:11px;color:var(--sub);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px;font-weight:700;}
 .contact-value{font-size:14px;font-weight:700;color:var(--ink);word-break:break-all;}
-.resume-download{text-align:center;padding:32px 0 16px;}
-.download-btn{
-  display:inline-flex;align-items:center;gap:10px;
-  padding:16px 44px;background:var(--ink);color:#fff!important;text-decoration:none;
-  border-radius:100px;font-size:16px;font-weight:800;
-  transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;
-}
-.download-btn::before{
-  content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
-  transition:left .5s ease;
-}
-.download-btn:hover{background:var(--accent);transform:translateY(-3px);
-  box-shadow:0 10px 36px rgba(29,155,240,.28);}
-.download-btn:hover::before{left:100%;}
-.download-hint{display:block;font-size:12.5px;color:var(--sub);margin-top:14px;}
 
 /* ========== Footer ========== */
 footer{
@@ -734,8 +718,6 @@ footer{
   .proj-body{max-height:none!important;}
   .animate{opacity:1!important;animation:none!important;}
   .img-thumb:hover img{transform:none;}
-  .download-btn{background:#333!important;color:#fff!important;
-    -webkit-print-color-adjust:exact;print-color-adjust:exact;}
 }
 
 /* ========== 图片全局约束（修复溢出） ========== */
@@ -1679,10 +1661,6 @@ h2.project{display:none!important;}
       <div class="contact-label">Location</div>
       <div class="contact-value">合肥 / 南京 / 苏州</div>
     </div>
-  </div>
-  <div class="resume-download animate fade-up">
-    <a href="刘娟_AI产品经理作品集.pdf" class="download-btn" download>⬇ 下载简历 PDF</a>
-    <div class="download-hint">包含完整项目经历与详细数据</div>
   </div>
 </section>
 
